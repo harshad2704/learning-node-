@@ -1,6 +1,4 @@
-const a = 10;
-const b = 10;
- const sum = a+b;
+const fs = require('fs');
 
-
- console.log(sum);
+const content = fs.readFileSync('./text.txt', 'utf8');
+ console.log(content);
